@@ -10,7 +10,7 @@ export default function ExamplePage() {
 
   return (
     <div className="w-lvw h-lvh flex flex-col items-center justify-center space-y-4 bg-slate-400">
-      <div className="p-8 text-slate-600">This is an example page for {"Joe's"} to-do list.</div>
+      <div className="p-8 text-slate-600 font-semibold">This is an example page for {"Joe's"} to-do list.</div>
 
       <ListItem listItems={listItems} setListItems={setListItems} />
       <Button
