@@ -41,18 +41,20 @@ function SideBar({ listItems, setlistItems }) {
     <div className="flex flex-col w-60 h-full gap-1 bg-slate-200 z-5">
       This is the sidebar
       {listItems?.map((item) => {
-        let bg_color = "bg-yellow-100";
+        let bg_color = "bg-yellow-50";
+        let text_color = "text-yellow-600";
         if (item.completed) {
           bg_color = "bg-green-100";
+          text_color = "text-green-600";
         }
         return (
-          <div key={item.id} className={`p-1 flex flex-col shadow shadow-lg bg-slate-100 rounded-sm ${bg_color}`}>
+          <div key={item.id} className={`p-1 flex flex-col shadow-xl bg-slate-100 rounded-sm ${bg_color}`}>
             <p>
               {item.type}{" "}
               {item.completed ? (
-                <div className="text-green-600">complete</div>
+                <div className={text_color}>complete</div>
               ) : (
-                <div className="text-yellow-600">in progress</div>
+                <div className={text_color}>in progress</div>
               )}
             </p>
           </div>
