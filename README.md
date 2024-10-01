@@ -1,6 +1,6 @@
 # Personal To-Do List App
 
-This is a simple to-do list web app built using Flask for the backend and HTML/CSS/JavaScript for the frontend.
+This is a simple to-do list web app built using javascript react.
 
 ## Features:
 
